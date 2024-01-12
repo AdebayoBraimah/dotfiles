@@ -18,7 +18,8 @@ unsetopt nomatch
 setopt interactive_comments
 
 # Nicer prompt.
-export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
+export PS1=$'\n'"%F{green} %*%F{red} %3~ %F{white}"$'\n'"$ "
+# export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 
 # Enable plugins.
 plugins=(git brew history kubectl history-substring-search)
@@ -136,6 +137,10 @@ extract(){
     echo "'$1' is not a valid file!"
   fi
 }
+
+# Conda aliases
+# alias load_conda=""
+alias unload_conda="conda deactivate"
 
 # Ask for confirmation when 'prod' is in a command string.
 #prod_command_trap () {
