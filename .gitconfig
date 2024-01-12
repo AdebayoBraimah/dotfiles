@@ -1,6 +1,6 @@
 [user]
-	name = AdebayoBraimah
-	email = adebayo.braimah@gmail.com
+  name = AdebayoBraimah
+  email = adebayo.braimah@gmail.com
 [init]
   defaultBranch = main
 [alias]
@@ -18,6 +18,6 @@
   psu = push -u
   pl = pull
 [pull]
-	rebase = true
+  rebase = true
 
 # Git config file example: https://gist.github.com/pksunkara/988716
