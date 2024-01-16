@@ -113,9 +113,6 @@ knownrm() {
  fi
 }
 
-# Allow Composer to use almost as much RAM as Chrome.
-export COMPOSER_MEMORY_LIMIT=-1
-
 # Handy Extract Function
 extract(){
   if [ -f $1 ] ; then
