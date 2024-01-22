@@ -139,6 +139,21 @@ extract(){
 # alias load_conda=""
 alias unload_conda="conda deactivate"
 
+# LLVM Flags                                                                                                            
+#                                                                                                                       
+# Bundled libc++                                                                                                        
+LDFLAGS="-L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib"                                            
+                                                                                                                        
+# LLVM                                                                                                                  
+# LDFLAGS="-L/opt/homebrew/opt/llvm/lib"                                                                                
+                                                                                                                        
+# Update Path                                                                                                           
+export PATH="/opt/homebrew/opt/llvm/bin:${PATH}"                                                                        
+                                                                                                                        
+# Compiler flags                                                                                                        
+export LDFLAGS=${LDFLAGS}                                                                                               
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include" 
+
 # Ask for confirmation when 'prod' is in a command string.
 #prod_command_trap () {
 #  if [[ $BASH_COMMAND == *prod* ]]
