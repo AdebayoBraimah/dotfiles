@@ -1,0 +1,9 @@
+VS code editor setup.
+
+The editor setup is not always done automatically.
+
+See this StackOverflow link for details: https://stackoverflow.com/a/47914944
+
+To toggle between Vim and VS code's default editor, the keyboard shortcut should be specified as:
+
+cmd + ctrl + v
