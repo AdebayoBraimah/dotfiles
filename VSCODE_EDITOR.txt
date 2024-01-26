@@ -1,4 +1,4 @@
-VS code editor setup.
+# VS code editor setup.
 
 The editor setup is not always done automatically.
 
@@ -7,3 +7,7 @@ See this StackOverflow link for details: https://stackoverflow.com/a/47914944
 To toggle between Vim and VS code's default editor, the keyboard shortcut should be specified as:
 
 cmd + ctrl + v
+
+# SSHFS
+
+See this link for SSHFS setup: https://code.visualstudio.com/docs/remote/troubleshooting#_using-sshfs-to-access-files-on-your-remote-host
